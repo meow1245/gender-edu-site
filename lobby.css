@@ -1,0 +1,196 @@
+/* 延續 styles.css 的基本樣式 */
+
+body {
+    background-color: #eef2f7; 
+}
+
+/* 導航列 */
+.navbar {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.platform-name {
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #357ABD;
+}
+
+/* 下拉式選單 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #357ABD;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* 主要內容區域 */
+.main-content {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+/* 側邊欄 */
+.user-sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.user-profile-summary, .profile-detail {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #4A90E2;
+}
+
+.user-name {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.welcome-msg {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.profile-detail {
+    text-align: left;
+}
+
+.profile-detail h4 {
+    margin-top: 15px;
+    color: #4A90E2;
+}
+
+.profile-detail p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.profile-detail-btn, .setting-btn {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-detail-btn:hover, .setting-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* 功能卡片區塊 */
+.function-cards {
+    flex-grow: 1;
+}
+
+.function-cards h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.func-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.func-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.func-card h3 {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.disabled-card {
+    background: #f0f0f0;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.disabled-card h3 {
+    color: #aaa;
+}
+.disabled-link {
+    color: #aaa !important;
+}
