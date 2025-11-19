@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>校園新聞</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>性別新聞 - 性別光譜</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lobby.css"> <link rel="stylesheet" href="news.css"> </head>
 <body>
+    <header class="navbar">
+        <div class="nav-left">
+            <h1 class="platform-name">性別光譜</h1>
+            <a href="index.html" class="nav-link">回首頁</a>
+        </div>
+        <div class="nav-right">
+            <a href="lobby.html" class="nav-link">回大廳</a>
+        </div>
+    </header>
 
-<header>
-    <a href="index.html" style="color: white;">← 返回</a>
-    <h2>校園新聞</h2>
-</header>
+    <div class="main-content news-container">
+        <h2>最新性別議題焦點</h2>
+        <p class="subtitle">追蹤國內外性別平等與多元發展的最新資訊。</p>
 
-<div class="container">
-    <h1 class="news-title">AI 導航系統正式啟用！🎉</h1>
-    <p>為了讓學生更容易找到教室，我們推出了智慧導航…</p>
-</div>
-
+        <div class="news-list-grid" id="news-list">
+            </div>
+    </div>
+    
+    <script src="news.js"></script>
 </body>
 </html>
