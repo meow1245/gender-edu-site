@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>性別平等教育互動平台</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>心動校園導航 - 首頁</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <header>
-    <h1>性別平等教育互動平台</h1>
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="about.html">產品介紹</a>
-      <a href="future.html">未來展望</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2>讓學習更有同理與體驗感</h2>
-      <p>這是一個以性別平等為主題的教育互動網站，結合遊戲、故事與反思，讓孩子在體驗中學習尊重與理解。</p>
-      <button onclick="alert('感謝你的關注！')">了解更多</button>
-    </section>
-  </main>
+<header>
+    <h2>心動校園導航</h2>
+    <img id="avatarBtn" class="avatar-btn" src="https://i.pravatar.cc/100">
+</header>
 
-  <footer>
-    <p>© 2025 心動校園團隊 | GitHub Pages 展示專案</p>
-  </footer>
+<div id="avatarMenu">
+    <a href="#">個人資料</a>
+    <a href="#">設定</a>
+</div>
 
-  <script src="script.js"></script>
+<div class="container">
+    <div class="card">
+        <h3>最新新聞</h3>
+        <a href="news.html">校園 AI 系統上線啦！✨</a>
+    </div>
+
+    <div class="card">
+        <h3>論壇</h3>
+        <a href="forum.html">查看全部文章 →</a>
+    </div>
+
+    <div class="card">
+        <h3>小遊戲</h3>
+        <a href="game.html">開始遊戲！🎮</a>
+    </div>
+</div>
+
+<script src="js/nav.js"></script>
 </body>
 </html>
