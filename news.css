@@ -1,0 +1,75 @@
+.news-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.news-container h2 {
+    color: #4A90E2;
+    margin-bottom: 5px;
+}
+
+.news-container .subtitle {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* 網格佈局 */
+.news-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* 新聞卡片樣式 */
+.news-card {
+    display: block;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 20px;
+}
+
+.news-info h3 {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-info .summary {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+    /* 限制摘要行數 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-info .date {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #aaa;
+}
