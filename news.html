@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>性別新聞 - 性別光譜</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="lobby.css"> <link rel="stylesheet" href="news.css"> </head>
+    <link rel="stylesheet" href="lobby.css">
+    <link rel="stylesheet" href="news.css"> 
+</head>
 <body>
     <header class="navbar">
         <div class="nav-left">
@@ -25,6 +27,32 @@
             </div>
     </div>
     
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-image" src="" alt="新聞圖片" class="modal-image">
+            <div class="modal-body">
+                <h3 id="modal-title"></h3>
+                <p class="modal-date" id="modal-date"></p>
+                
+                <div id="modal-full-content" class="full-content">
+                    </div>
+
+                <hr>
+
+                <div class="comments-section">
+                    <h4>💬 留言區</h4>
+                    <form id="comment-form">
+                        <textarea id="comment-input" placeholder="發表您的看法..." required></textarea>
+                        <button type="submit" class="primary-btn comment-submit-btn">送出留言</button>
+                    </form>
+                    <div id="comments-list" class="comments-list">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="news.js"></script>
 </body>
 </html>
