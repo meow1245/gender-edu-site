@@ -1,0 +1,144 @@
+/* 基本重置 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* 淺灰色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* 登入/註冊卡片樣式 */
+.auth-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    color: #4A90E2; /* 主題藍 */
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    color: #888;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+/* 表單樣式 */
+.auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.auth-form input:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+.forgot-link {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.forgot-link a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+/* 按鈕樣式 */
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4A90E2;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #357ABD;
+}
+
+.divider {
+    margin: 20px 0;
+    color: #aaa;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #eee;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.google-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.switch-mode {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.switch-mode a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+}
