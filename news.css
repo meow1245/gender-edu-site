@@ -1,75 +1,119 @@
-.news-container {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
+/* ... (原有的 news-list-grid 和 news-card 樣式保留) ... */
+
+/* **** Modal 彈出框樣式 **** */
+.modal {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    z-index: 1000; /* 確保在最上層 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 允許內容滾動 */
+    background-color: rgba(0,0,0,0.7); /* 半透明黑色背景 */
+    padding-top: 60px;
 }
 
-.news-container h2 {
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 居中顯示 */
+    padding: 0;
+    border-radius: 10px;
+    width: 80%; /* 寬度佔比 */
+    max-width: 800px; /* 最大寬度 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.modal-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body h3 {
     color: #4A90E2;
+    font-size: 2em;
     margin-bottom: 5px;
 }
 
-.news-container .subtitle {
+.modal-date {
     color: #888;
-    margin-bottom: 30px;
-    font-size: 1.1em;
-}
-
-/* 網格佈局 */
-.news-list-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-/* 新聞卡片樣式 */
-.news-card {
+    font-size: 0.9em;
+    margin-bottom: 20px;
     display: block;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    text-decoration: none;
+}
+
+.full-content {
+    line-height: 1.8;
     color: #333;
-    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 150px; /* 確保有足夠空間顯示內容 */
 }
 
-.news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+/* 留言區塊樣式 */
+.comments-section h4 {
+    margin-top: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.news-image {
+#comment-input {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.news-info {
-    padding: 20px;
-}
-
-.news-info h3 {
-    font-size: 1.25em;
-    color: #333;
+    min-height: 80px;
+    padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
 }
 
-.news-info .summary {
-    color: #666;
-    font-size: 0.95em;
-    line-height: 1.5;
-    /* 限制摘要行數 */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.comment-submit-btn {
+    width: 150px;
+    float: right;
 }
 
-.news-info .date {
-    display: block;
-    margin-top: 15px;
-    font-size: 0.8em;
-    color: #aaa;
+.comments-list {
+    clear: both;
+    margin-top: 20px;
+}
+
+.comment-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.comment-meta {
+    font-weight: bold;
+    color: #4A90E2;
+    margin-right: 10px;
 }
